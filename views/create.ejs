@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+  <%- include('./partials/head.ejs') %>
+
+
+<body style="background-color: rgb(175, 148, 148);">
+
+
+  <%- include('./partials/nav.ejs') %>
+
+
+      <div class="container" >
+          <div class="jumbotron" style="background-color: rgba(0, 0, 0, 0.568); box-shadow: 25px 25px rgba(0, 0, 0, 0.295);">
+
+                       <h3 class = " text-center text-uppercase" style="color: rgb(255, 255, 255);">create content</h3>
+
+        <div class="row">
+            <div class=" col-md-7  mx-auto">
+
+
+                <form action='/create' method="POST">
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea" style="color: rgb(255, 255, 255); ">Blog Headline </label>
+                      <input name = "heading" placeholder="Enter head line" type="text" class="form-control" id="exampleFormControlTextarea" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1"style="color: white;">Content</label>
+                        <textarea name = "body"placeholder="Enter content" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputPassword1"style="color: white;">Author name</label>
+                      <input name = "author" placeholder="enter author name" type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+        </div>
+        
+      </div>
+    </section>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>

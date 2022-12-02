@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <%- include('./partials/head.ejs') %>
+
+<body style="background-color: rgba(0, 0, 0, 0.418);">
+
+  <%- include('./partials/nav.ejs') %>
+
+
+  <div class="container-fluid  px-5 ">
+
+
+  <% if (blogs.length === 0 ){ %>
+ 
+   <h1>No blogs yet.....</h1>
+
+   
+   <% } else { %>
+
+    <div class="row mt-5 ">
+    <%  blogs.forEach(blog =>{   %>
+      
+     
+
+      
+        <div class="col-sm-6 col-md-4">
+            <div class="card text-white bg-dark mb-3" style="max-width: 25rem;box-shadow: 25px 25px rgba(0, 0, 0, 0.418);">
+                <div class="card-header"><%= blog.heading %></div>
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                   <p class="card-text"><%= blog.body %></p>
+                   <a  href= "/blog/<%= blog._id %>" class =""> read more</a>
+                 </div>
+               </div>
+         </div>
+     
+
+    
+     <% }) %>
+
+    </div>
+     
+  <% } %>
+
+  
+
+    
+  
+  
+
+
+     
+    
+      
+    </div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
