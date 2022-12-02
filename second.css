@@ -1,0 +1,105 @@
+.filter {
+    box-shadow: 10px 10px 10px 10px #FFAEAE;
+    width: 70%;
+    margin-left: 35px;
+    padding: 20px;
+}
+
+.item {
+    box-shadow: 10px 10px 10px 10px #FFAEAE;
+    width: 90%;
+    height: 225px;
+    margin-bottom: 50px;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.page {
+    display: inline-block;
+    box-shadow: 1px 1px 1px 1px #FFAEAE;
+    padding: 5px;
+    border-radius: 5px;
+    color: #FFAEAE;
+}
+
+.header {
+    background-color: #FFAEAE;
+    height: 50px;
+    padding-top: 5px;
+}
+
+.header-logo {
+    background-color: rgb(7, 6, 5);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    color: #FFAEAE;
+    text-align: center;
+    font-size: 37px;
+    margin-left: 1%;
+    display: inline-block;
+}
+
+body{
+    margin:0;
+}
+
+.user-accounts {
+    float: right;
+    margin-top: 8px;
+    color: white;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.login {
+    display: inline-block;
+}
+
+.signup {
+    display: inline-block;
+    border: solid 1px white;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.heading {
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+    line-height: 2;
+    margin-left: 35px;
+}
+
+.filter-header {
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    font-family: cursive;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.filter-option {
+    font-size: 15px;
+    font-family: auto;
+    color: gray;
+    line-height: 1.5;
+}
+
+.dd {
+    width: 200px;
+    height: 26px;
+    margin-top: 10px;
+    color: gray;
+}
+
+.item-heading {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: cursive;
+    color: white;
+}
