@@ -54,7 +54,7 @@ app.use(express.urlencoded({extended : true}));
 
 //home page // all blogs..............
 
-app.get('/' , (req,res) =>
+app.get('/editor' , (req,res) =>
 {
 
 
@@ -126,7 +126,7 @@ app.delete('/blog/:id' , (req,res) => {
 
 
 // editor page ..........................
-app.get('/editor' , (req,res) => {
+app.get('/' , (req,res) => {
 
 
   Blog.find().sort({createdAt : -1})
@@ -156,7 +156,7 @@ app.post('/create' , (req, res) =>{
 
 blog.save()
     .then( result =>{
-      res.redirect('/editor');
+      res.redirect('/');
     })
     .catch( err => console.log(err));
 
